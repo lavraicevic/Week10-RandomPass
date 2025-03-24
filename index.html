@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="h-full bg-slate-800 text-neutral-300 font-fira">
+
+    <div class="w-1/3 mx-auto">
+        <h1 class="w-full mt-20 mb-5 py-4 text-center font-bold text-2xl tracking-widest border-2 border-purple-700">Password generator</h1>
+
+        <!-- "Form" holder -->
+
+        <div class="w-full border-2 border-purple-500 p-5">
+
+            <!-- Character length -->
+
+            <div class="flex justify-between items-center">
+                <p class="text-lg tracking-wide">Character Length</p>
+                <span class="text-2xl text-emerald-500">0</span>
+            </div>
+
+            <!-- Range input -->
+
+            <div>
+                <input type="range" name="" id="slider" class="w-full" min="5" max="15">
+            </div>
+
+            <!-- Check-boxes -->
+
+            <div class="flex flex-col gap-1">
+
+                <label>
+                    <input type="checkbox" name="uppercase" id=""> Include uppercase
+                </label>
+    
+                <label>
+                    <input type="checkbox" name="numbers" id=""> Include numbers
+                </label>
+    
+                <label>
+                     <input type="checkbox" name="symbols" id=""> Include symbols
+                </label>
+
+            </div>
+
+
+
+            <!-- Password Strength -->
+
+            <div class="mt-5 flex justify-between items-center p-5 bg-zinc-700 border-zinc-700">
+                <h2 class="text-xl font-semibold tracking-wide">Strength</h2>
+                <!-- Show -->
+                <div class="flex gap-1">
+
+                    <div class="h-8 w-3 border-2 border-white"></div>
+
+                    <div class="h-8 w-3 border-2 border-white"></div>
+
+                    <div class="h-8 w-3 border-2 border-white"></div>
+
+                </div>
+
+            </div>
+
+            <button class="mt-5 flex justify-center w-full items-center p-5 text-emerald-500 bg-neutral-200">
+                <span>Generate</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" class="w-5"/>
+                    </svg>
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>
