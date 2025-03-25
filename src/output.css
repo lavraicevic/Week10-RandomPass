@@ -314,6 +314,9 @@
   .text-neutral-500 {
     color: var(--color-neutral-500);
   }
+  .lowercase {
+    text-transform: lowercase;
+  }
   .uppercase {
     text-transform: uppercase;
   }
